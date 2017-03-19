@@ -1,0 +1,17 @@
+{
+    "description": "Servicename based Authorization Plugin",
+    "documentation": "Github URL",    
+    "interface": {
+        "socket": "kekruauth.sock",
+        "types": [
+            "docker.authz/1.0"
+        ]
+    },    
+    "entrypoint": [
+        "node", "main.js" 
+    ],
+    "workdir": "/data",
+    "network": {
+        "type": "host"
+    }  
+}
